@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header>Registration</header>
+
+    <form action="#" onsubmit="return validateForm()" id="myForm">
+      <div class="form-first">
+        <div class="details personal">
+          <span class="title">Personal Details</span>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="fname">Full Name</label>
+              <input type="text" name="fname" id="fname" placeholder="Enter your name">
+              <p class="error-message" id="fnameError"></p>
+            </div>
+
+            <div class="input-field">
+              <label for="dob">Date Of Birth</label>
+              <input type="date" id="dob" name="date of birth">
+              <p class="error-message" id="dobError"></p>
+            </div>
+
+            <div class="input-field">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" placeholder="Enter your email">
+              <p class="error-message" id="emailError"></p>
+            </div>
+          </div>
+
+          <div class="fields">
+            <div class="input-field">
+              <label for="mobno">Mobile Number</label>
+              <input type="number" name="mobno" id="mobno" placeholder="Enter mobile number">
+              <p class="error-message" id="mobnoError"></p>
+            </div>
+
+            <div class="input-field">
+              <label for="gender">Gender</label>
+              <select id="gender" name="genderf">
+                <option value="Select Gender">Select Gender</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="MALE">MALE</option>
+                <option value="OTHER">OTHER</option>
+              </select>
+              <p class="error-message" id="genderError"></p>
+            </div>           
+
+            <div class="input-field">
+              <label for="occupation">Occupation</label>
+              <input type="text" name="occupation" id="occupation" placeholder="Enter your occupation">
+              <p class="error-message" id="occupationError"></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="details identity">
+          <span class="title">Identity Details</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <label for="idproof">Id Proof</label>
+              <select id="idproof" name="idprooff">
+                <option value="Select Id Proof">Select Id Proof</option>
+                <option value="aadhaharcard">Aadhar Card</option>
+                <option value="pancard">Pan Card</option>
+                <option value="passport">Passport</option>
+                <option value="drivinglicence">Driving licence</option>
+              </select>
+              <p class="error-message" id="idproofError"></p>
+            </div>
+
+            <div class="input-field">
+              <label for="idnumber">ID Number</label>
+              <input type="number" id="idnumber" name="idnumber" placeholder="Enter your id number">
+              <p class="error-message" id="idnumberError"></p>
+            </div>
+
+            <div class="input-field">
+              <label for="issuedautho">Issued Authority</label>
+              <input type="text" name="issuedautho" id="issuedautho" placeholder="Enter issued authority">
+              <p class="error-message" id="issuedauthoError"></p>
+            </div>
+          </div>
+          
+          <div class="fields">
+            <div class="input-field">
+              <label for="isssuedstate">Issued State</label>
+              <input type="text" id="isssuedstate" name="isssuedstate" placeholder="Enter issued state">
+              <p class="error-message" id="isssuedstateError"></p>
+            </div>
+            
+            <div class="input-field">
+              <label for="issueddate">Issued Date</label>
+              <input type="date" id="issueddate" name="issueddate">
+              <p class="error-message" id="issueddateError"></p>
+            </div>
+            
+            <div class="input-field">
+              <label for="expirydate">Expiry Date</label>
+              <input type="date" name="expirydate" id="expirydate">
+              <p class="error-message" id="expirydateError"></p>
+            </div>
+          </div>
+
+        </div>
+          <button type="submit" class="submitBtn">
+            <span class="btnText">Submit</span>
+          </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- External JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
